@@ -1,0 +1,26 @@
+{
+  "name": "ufwebbsida",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch style/main.scss style/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klovaaxel/UFWebbsida.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "axel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klovaaxel/UFWebbsida/issues"
+  },
+  "homepage": "https://github.com/klovaaxel/UFWebbsida#readme"
+}
