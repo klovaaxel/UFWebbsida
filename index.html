@@ -2,12 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!--link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style/main.css">
 
-    <title>Hello World</title>
+
+    <title>Zitrus</title>
   </head>
+
   <body>
-    <h1>Hello World</h1>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="resources/img/logo/logo_text_light.svg" alt="ZITRUS">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler text-center navbarMenuButton" id="navbarMenuButton" onclick="menuTextSwap()">Menu</span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">What we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--div class="VideoContainer">
+      <video autoplay muted loop id="myVideo">
+        <source src="resources/vid/main_bg.webm" type="video/webm">
+      </video>
+    </div-->
+
+    <section class="bg-light">
+      <header class="header">
+        <h1>ZITRUS</h1>
+        <h2>IT SOLUTIONS</h2>
+      </header>
+    </section>
+
+    <section class="bg-dark">
+      <h2>What we do</h2>
+    </section>
+
+    <section class="bg-light">
+      <h2>Who we work with</h2>
+    </section>
+
+    <section class="bg-dark">
+      <h2>Contact</h2>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>

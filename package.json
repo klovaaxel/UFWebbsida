@@ -4,9 +4,12 @@
   "description": "sass",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "devbridge-styleguide": "^0.4.18"
+  },
   "scripts": {
     "sass": "sass --watch style/main.scss style/main.css"
   },
