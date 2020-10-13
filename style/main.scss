@@ -1,7 +1,7 @@
 $font-stack: sans-serif, Helvetica;
 $primary-color: #b4da17; //Bitter Lemon
 $primary-dark: #444444; //Onyx
-$secondary-dark: #707070;
+$secondary-dark: #707070; //Sonic Silver
 $primary-light: #F4F2F3; //Cultured
 
 body{
@@ -39,7 +39,7 @@ header h2{
   font-variant: small-caps;
 }
 body section:first-of-type{
-  background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #F4F2F399;
+  background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #F4F2F3dd;
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
   height: 100vh;
@@ -70,12 +70,12 @@ section{
   width: 100%;
 }
 .bg-dark {
-  background-color: $primary-dark;
+  background-color: $secondary-dark;
   color: $primary-light;
 }
 .bg-light{
   background-color: $primary-light;
-  color: $primary-dark;
+  color: $secondary-dark;
 }
 
 //--- Navbar
@@ -83,9 +83,10 @@ section{
   position: fixed;
   width: 100%;
   background-color: $primary-dark;
+  z-index: 100;
 }
 .nav-link, .nav-item{
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 .navbar-dark .navbar-toggler span{
   transition: opacity .2s ease;
@@ -103,7 +104,7 @@ section{
 
 
 //--- Small devices (landscape phones, 576px and up)
-@media (min-width: 0px) {
+@media (min-width: 100px) {
   .navbar{
     bottom: 0;
     top: initial;
@@ -114,6 +115,23 @@ section{
   }
   .navbar-brand{
     display: none;
+  }
+  header h1 {
+    font-size: 4.5em;
+  }
+  header h2 {
+    font-size: 2.2em;
+  }
+  body section:first-of-type {
+    background-size: 110% 60%, 100% 100%;
+    background-position: -260% 100%, 0 0;
+  }
+  .navbarMenuButton {
+    font-size: 5em;
+  }
+  .nav-item{
+    font-size: 2.2em;
+    margin-top: 1.5em;
   }
 }
 
@@ -130,6 +148,19 @@ section{
   .navbar-brand{
     display: none;
   }
+  header h1 {
+    font-size: 12.1em;
+  }
+  header h2 {
+    font-size: 5.2em;
+  }
+  body section:first-of-type {
+    background-size: 110% 46%, 100% 100%;
+    background-position: -260% 100%, 0 0;
+  }
+  .navbarMenuButton {
+    font-size: 3em;
+  }
 }
 
 //--- Large devices (desktops, 992px and up)
@@ -143,6 +174,11 @@ section{
   }
   .navbar-brand{
     display: inline-block;
+  }
+  .navbar-collapse ul{
+    text-align: right;
+    margin-right:1%;
+    margin-top: 1em;
   }
 }
 
