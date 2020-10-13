@@ -107,6 +107,10 @@ section {
   transition: 0.2;
 }
 
+.navbar-brand img {
+  height: 2em;
+}
+
 @media (min-width: 100px) {
   .navbar {
     bottom: 0;

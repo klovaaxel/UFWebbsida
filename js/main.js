@@ -15,3 +15,10 @@ tl.set(".navbar", { y: "-300%", duration: 0,});
 
 tl.to(".header", { x: "0%", duration: .5,});
 tl.to(".navbar", { y: "0%", duration: .6,});
+
+
+window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+});
