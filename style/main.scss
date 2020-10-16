@@ -265,16 +265,18 @@ section{
     background-position: 260% 95%, 0 0;
   }
   .wedo div{
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     max-height: 50%;
+    justify-content: space-between;
   }
   .wedo div p{
     width: 50%;
   }
   .wedo div img{
-    flex-grow: 1;
+    float: right;
     max-height: 100%;
   }
   .workwith div{

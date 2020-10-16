@@ -299,10 +299,12 @@ section {
   }
 
   .wedo div {
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     max-height: 50%;
+    justify-content: space-between;
   }
 
   .wedo div p {
@@ -310,7 +312,7 @@ section {
   }
 
   .wedo div img {
-    flex-grow: 1;
+    float: right;
     max-height: 100%;
   }
 
