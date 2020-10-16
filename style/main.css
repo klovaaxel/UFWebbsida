@@ -133,12 +133,21 @@ section {
     display: none;
   }
 
+  header {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+  }
+
   header h1 {
-    font-size: 4.5em;
+    font-size: 2.5em;
+    width: 100vw;
+    text-align: center;
   }
 
   header h2 {
     font-size: 2.2em;
+    padding-left: 5%;
   }
 
   body section:first-of-type {
@@ -148,6 +157,7 @@ section {
 
   .navbarMenuButton {
     font-size: 5em;
+    padding: 0 0;
   }
 
   .nav-item {
@@ -170,7 +180,7 @@ section {
   }
 
   header h1 {
-    font-size: 12.1em;
+    font-size: 15.1em;
   }
 
   header h2 {
@@ -178,12 +188,13 @@ section {
   }
 
   body section:first-of-type {
-    background-size: 110% 46%, 100% 100%;
-    background-position: -260% 100%, 0 0;
+    background-size: 200% 40%, 100% 100%;
+    background-position: 1% 80%, 0 0;
   }
 
   .navbarMenuButton {
     font-size: 3em;
+    padding: 1em 0;
   }
 }
 @media (min-width: 992px) {
@@ -204,6 +215,26 @@ section {
     text-align: right;
     margin-right: 1%;
     margin-top: 1em;
+  }
+
+  header {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+
+  header h1 {
+    width: auto;
+    text-align: left;
+  }
+
+  header h2 {
+    padding-left: 0%;
+  }
+
+  body section:first-of-type {
+    background-size: 80% 50%, 100% 100%;
+    background-position: 260% 95%, 0 0;
   }
 }
 @media (min-width: 1200px) {
