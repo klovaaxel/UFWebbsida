@@ -1,3 +1,9 @@
+/*
+img{
+  width: 100%;
+  height: 42%;
+  background-color: red;
+}*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
@@ -64,12 +70,13 @@ video {
 }
 
 section + section {
-  padding-top: 1em;
+  padding-top: 5em;
 }
 
 section {
   height: 100vh;
   width: 100%;
+  padding: 0 5em;
 }
 
 .bg-dark {
@@ -119,7 +126,53 @@ section {
   height: 2em;
 }
 
-@media (min-width: 100px) {
+.wedo div img {
+  display: inline-block;
+}
+
+.bg-light {
+  background: url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #F4F2F3;
+  background-size: 80% 50%, 100% 100%;
+  background-position: 260% 95%, 0 0;
+  height: 100vh;
+}
+
+.workwith div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.workwith div a {
+  display: inline-block;
+  width: 34%;
+  height: auto;
+  margin-top: 5em;
+}
+
+.workwith div a img {
+  width: 100%;
+  height: 100%;
+}
+
+.workwith div a {
+  display: inline-block;
+  width: 34%;
+  height: auto;
+  margin-top: 5em;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 6em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 3.5em;
+  }
+
   .navbar {
     bottom: 0;
     top: initial;
@@ -150,7 +203,7 @@ section {
     padding-left: 5%;
   }
 
-  body section:first-of-type {
+  body section:first-of-type, .bg-light {
     background-size: 110% 60%, 100% 100%;
     background-position: -260% 100%, 0 0;
   }
@@ -187,7 +240,7 @@ section {
     font-size: 5.2em;
   }
 
-  body section:first-of-type {
+  body section:first-of-type, .bg-light {
     background-size: 200% 40%, 100% 100%;
     background-position: 1% 80%, 0 0;
   }
@@ -198,6 +251,10 @@ section {
   }
 }
 @media (min-width: 992px) {
+  p {
+    font-size: 2em;
+  }
+
   .navbar {
     top: 0;
     bottom: initial;
@@ -217,6 +274,10 @@ section {
     margin-top: 1em;
   }
 
+  .navbarMenuButton {
+    padding: 0 0;
+  }
+
   header {
     position: absolute;
     top: 25%;
@@ -232,9 +293,36 @@ section {
     padding-left: 0%;
   }
 
-  body section:first-of-type {
+  body section:first-of-type, .bg-light {
     background-size: 80% 50%, 100% 100%;
     background-position: 260% 95%, 0 0;
+  }
+
+  .wedo div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 50%;
+  }
+
+  .wedo div p {
+    width: 50%;
+  }
+
+  .wedo div img {
+    flex-grow: 1;
+    max-height: 100%;
+  }
+
+  .workwith div {
+    width: 70%;
+  }
+
+  .workwith div a {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-top: 5em;
   }
 }
 @media (min-width: 1200px) {

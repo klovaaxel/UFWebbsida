@@ -20,16 +20,19 @@
         <span class="navbar-toggler text-center navbarMenuButton" id="navbarMenuButton" onclick="menuTextSwap()">Menu</span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarToggle" onclick="menuTextSwap()">
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">What we do</a>
+            <a class="nav-link" href="#whatwedo">What we do</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#whoweworkwith">Who we work with</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -42,22 +45,34 @@
     </div>
 
     <section class="bg-light">
-      <header class="header">
+      <header class="header" id="home">
         <h1>ZITRUS</h1>
         <h2>IT SOLUTIONS</h2>
       </header>
     </section>
 
-    <section class="bg-dark">
+    <section class="bg-dark wedo" id="whatwedo">
       <h2>What we do</h2>
+      <div class="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
+        <img src="https://via.placeholder.com/150" alt="Picture of people solving problems">
+      </div>
     </section>
 
-    <section class="bg-light">
+    <section class="bg-light workwith" id="whoweworkwith">
       <h2>Who we work with</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div>
+        <a href="#"><img src="https://via.placeholder.com/150" alt=""></a>
+        <a href="#"><img src="https://via.placeholder.com/150" alt=""></a>
+        <a href="#"><img src="https://via.placeholder.com/150" alt=""></a>
+      </div>
+
     </section>
 
-    <section class="bg-dark">
+    <section class="bg-dark" id="contact">
       <h2>Contact</h2>
+
     </section>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
