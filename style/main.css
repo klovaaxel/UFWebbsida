@@ -15,11 +15,33 @@ body {
 }
 
 a {
-  outline: 0;
+  outline: none !important;
+  color: #b4da17;
 }
 
 a:hover, a:active, a:focus {
+  outline: none !important;
+  color: #b4da17;
+}
+
+.btn-primary {
+  color: #444444;
+  font-weight: bold;
+  background-color: #b4da17;
+  border-color: #b4da17;
+  border-width: 0.2em;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+  color: #b4da17;
+  font-weight: bold;
+  background-color: #444444;
+  border-color: #b4da17;
+}
+
+.btn:focus, .btn.focus {
   outline: 0;
+  box-shadow: 0 0 0 0.2rem #b4da17;
 }
 
 header {
@@ -76,7 +98,7 @@ section + section {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 0 5em;
 }
@@ -183,6 +205,40 @@ section {
   margin-top: 5em;
 }
 
+#contact {
+  padding-bottom: 30%;
+}
+
+address {
+  font-weight: bold;
+}
+
+address a {
+  text-decoration: underline;
+}
+
+label {
+  font-weight: bold;
+}
+
+.icon {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.icon a {
+  display: inline-flex;
+  font-size: 4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form-horizontal {
+  margin-bottom: 12%;
+}
+
 @media (min-width: 576px) {
   h2 {
     font-size: 6em;
@@ -240,6 +296,18 @@ section {
 
   .wedo div p {
     width: 100%;
+  }
+
+  .contact {
+    font-size: 3.2em;
+  }
+
+  .btn {
+    font-size: 1em;
+  }
+
+  .form-control {
+    font-size: 1em;
   }
 }
 @media (min-width: 768px) {
@@ -352,6 +420,14 @@ section {
     width: 20%;
     height: auto;
     margin-top: 5em;
+  }
+
+  .contact {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1em;
   }
 }
 @media (min-width: 1200px) {

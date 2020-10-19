@@ -18,10 +18,29 @@ body{
   background-color: $primary-light;
 }
 a {
-   outline: 0;
+   outline: none !important;
+   color: $primary-color;
 }
 a:hover, a:active, a:focus {
+  outline: none !important;
+  color: $primary-color;
+}
+.btn-primary {
+    color: $primary-dark;
+    font-weight: bold;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    border-width: .2em;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+    color: $primary-color;
+    font-weight: bold;
+    background-color: $primary-dark;
+    border-color: $primary-color;
+}
+.btn:focus, .btn.focus {
   outline: 0;
+  box-shadow: 0 0 0 0.2rem $primary-color;
 }
 
 //--- Header
@@ -74,7 +93,7 @@ section + section {
 }
 
 section{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 0 5em;
 }
@@ -168,6 +187,35 @@ section{
   height: auto;
   margin-top: 5em;
 }
+
+//--- Contact
+#contact{
+  padding-bottom: 30%;
+}
+address{
+  font-weight: bold;
+}
+address a{
+  text-decoration: underline;
+}
+label {
+  font-weight: bold;
+}
+.icon{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.icon a{
+  display: inline-flex;
+  font-size: 4em;
+  text-align: center;
+  text-decoration: none;
+}
+.form-horizontal{
+  margin-bottom: 12%;
+}
 //--- Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   h2{
@@ -218,6 +266,15 @@ section{
   .wedo div p {
       width: 100%;
   }
+  .contact{
+    font-size: 3.2em;
+  }
+  .btn{
+    font-size: 1em;
+  }
+  .form-control {
+    font-size: 1em;
+  }
 }
 
 //--- Medium devices (tablets, 768px and up)
@@ -255,6 +312,8 @@ section{
   .wedo div img{
     margin: 4em 0;
   }
+
+
 }
 
 //--- Large devices (desktops, 992px and up)
@@ -313,6 +372,12 @@ section{
     width: 20%;
     height: auto;
     margin-top: 5em;
+  }
+  .contact{
+    font-size: 1em;
+  }
+  .btn{
+    font-size: 1em;
   }
 }
 
