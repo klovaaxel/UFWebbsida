@@ -2,7 +2,7 @@ $font-stack: sans-serif, Helvetica;
 $primary-color: #b4da17; //Bitter Lemon
 $primary-dark: #444444; //Onyx
 $secondary-dark: #707070; //Sonic Silver
-$primary-light: #F4F2F3; //Cultured
+$primary-light: #fff; //Cultured
 /*
 img{
   width: 100%;
@@ -36,17 +36,17 @@ header h1{
   font-size: 10.5em;
   letter-spacing: .4rem;
   font-weight: bold;
-  font-variant: small-caps;
+  font-variant: normal;
   line-height: .8em;
 }
 header h2{
   font-size: 4.2em;
   letter-spacing: .2rem;
   font-weight: bold;
-  font-variant: small-caps;
+  font-variant: normal;
 }
 body section:first-of-type{
-  background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #F4F2F3dd;
+  background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #fffd;
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
   height: 100vh;
@@ -94,8 +94,11 @@ section{
   background-color: $primary-dark;
   z-index: 100;
 }
+.navbar-nav{
+  margin-bottom: 5em;
+}
 .nav-link, .nav-item{
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .navbar-dark .navbar-toggler span{
   transition: opacity .2s ease;
@@ -107,7 +110,7 @@ section{
 }
 .navbar-dark .navbar-toggler, .navbar-brand, .navbar, .navbar-dark .navbar-nav .nav-link{
   font-weight: bold;
-  font-variant: small-caps;
+  font-variant: normal;
   color: $primary-light;
   border: none;
 }
@@ -119,12 +122,26 @@ section{
   height: 2em;
 }
 //--- what we do section
-.wedo div img{
-  display: inline-block;
+.wedo div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+.wedo div img{
+  display: inline-flex;
+  flex-grow: 1;
+  max-height: 35em;
+  margin: 0 0 0 2em;
+}
+
+.wedo .row{
+  margin: 0;
+  padding: 0;
+}
+
 //--- Work with section
 .bg-light{
-  background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #F4F2F3;
+  background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, $primary-light;
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
   height: 100vh;
@@ -172,7 +189,7 @@ section{
   }
   header{
     position: absolute;
-    top: 25%;
+    top: 14%;
     left: 0%;
   }
   header h1 {
@@ -189,12 +206,17 @@ section{
     background-position: -260% 100%, 0 0;
   }
   .navbarMenuButton {
-    font-size: 5em;
+    font-size: 5
+
+    em;
     padding: 0 0;
   }
   .nav-item{
     font-size: 2.2em;
     margin-top: 1.5em;
+  }
+  .wedo div p {
+      width: 100%;
   }
 }
 
@@ -219,11 +241,19 @@ section{
   }
   body section:first-of-type, .bg-light{
     background-size: 200% 40%, 100% 100%;
-    background-position: 1% 80%, 0 0;
+    background-position: 1% 64%, 0 0;
   }
   .navbarMenuButton {
-    font-size: 3em;
+    font-size: 4em;
     padding: 1em 0;
+  }
+  .wedo div p {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  .wedo div img{
+    margin: 4em 0;
   }
 }
 
@@ -249,6 +279,7 @@ section{
   }
   .navbarMenuButton{
     padding: 0 0;
+    font-size: 2em;
   }
   header{
     position: absolute;
@@ -266,20 +297,13 @@ section{
     background-size: 80% 50%, 100% 100%;
     background-position: 260% 95%, 0 0;
   }
-  .wedo div{
-    margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-height: 50%;
-    justify-content: space-between;
-  }
   .wedo div p{
     width: 50%;
+    margin: 0;
+    padding: 0;
   }
   .wedo div img{
-    float: right;
-    max-height: 100%;
+    margin: 0 0 0 2em;
   }
   .workwith div{
     width: 70%;
@@ -290,7 +314,6 @@ section{
     height: auto;
     margin-top: 5em;
   }
-
 }
 
 //--- Extra large devices (large desktops, 1200px and up)
