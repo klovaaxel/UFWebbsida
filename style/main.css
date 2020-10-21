@@ -343,16 +343,9 @@ label {
   }
 
   .wedo div img {
-    padding: 0;
     width: 100vw;
     max-width: 100vw;
     margin-left: -5em;
-    box-shadow: none;
-  }
-
-  .workwith div a img {
-    padding: 0;
-    box-shadow: none;
   }
 
   .contact .links {

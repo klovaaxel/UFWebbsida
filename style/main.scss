@@ -260,7 +260,6 @@ label {
 }
 
 
-
 //--- Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (orientation: portrait) {
   .navbar{
@@ -307,15 +306,10 @@ label {
     font-size: 1em;
   }
   .wedo div img{
-    padding: 0;
     width: 100vw;
     max-width: 100vw;
     margin-left: -5em;
-    box-shadow: none;
-  }
-  .workwith div a img{
-    padding: 0;
-    box-shadow: none;
+
   }
   .contact .links{
     margin-left: 0%;
@@ -324,7 +318,6 @@ label {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-
   }
   .card-shadow{
     width: 90%;
