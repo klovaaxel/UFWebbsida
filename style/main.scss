@@ -17,6 +17,13 @@ body{
   padding: 0;
   background-color: $primary-light;
 }
+h2{
+  font-size: 6rem;
+  font-weight: bold;
+}
+p{
+  font-size: 3.2rem;
+}
 a {
    outline: none !important;
    color: $primary-color;
@@ -86,6 +93,7 @@ video{
   min-height: 56.25vw;
   background: url(resources/img/vid/main_bg.gif);
   background-size: cover;
+  object-fit: fill;
 }
 //--- PageLayout
 section + section {
@@ -117,7 +125,7 @@ section{
   margin-bottom: 5em;
 }
 .nav-link, .nav-item{
-  font-size: 1.5em;
+  font-size: 4rem;
 }
 .navbar-dark .navbar-toggler span{
   transition: opacity .2s ease;
@@ -141,21 +149,17 @@ section{
   height: 2em;
 }
 //--- what we do section
-.wedo div{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 .wedo div img{
-  display: inline-flex;
-  flex-grow: 1;
-  max-height: 70vh;
-  margin: 0 0 0 2em;
+  padding: 2em;
 }
 
-.wedo .row{
-  margin: 0;
-  padding: 0;
+.wedo .row {
+  height: 100%;
+}
+
+.mb-lg-5, .my-lg-5 {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 //--- Work with section
@@ -209,22 +213,12 @@ label {
 }
 .icon a{
   display: inline-flex;
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
   text-decoration: none;
 }
-.form-horizontal{
-  margin-bottom: 12%;
-}
 //--- Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  h2{
-    font-size: 6em;
-    font-weight: bold;
-  }
-  p{
-    font-size: 3.5em;
-  }
+@media (min-width: 576px) and (orientation: portrait) {
   .navbar{
     bottom: 0;
     top: initial;
@@ -254,17 +248,10 @@ label {
     background-position: -260% 100%, 0 0;
   }
   .navbarMenuButton {
-    font-size: 5
-
-    em;
     padding: 0 0;
   }
   .nav-item{
-    font-size: 2.2em;
     margin-top: 1.5em;
-  }
-  .wedo div p {
-      width: 100%;
   }
   .contact{
     font-size: 3.2em;
@@ -278,7 +265,7 @@ label {
 }
 
 //--- Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: portrait) {
   .navbar{
     bottom: 0;
     top: initial;
@@ -303,14 +290,6 @@ label {
   .navbarMenuButton {
     font-size: 4em;
     padding: 1em 0;
-  }
-  .wedo div p {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-  }
-  .wedo div img{
-    margin: 4em 0;
   }
 
 
@@ -356,14 +335,6 @@ label {
     background-size: 80% 50%, 100% 100%;
     background-position: 260% 95%, 0 0;
   }
-  .wedo div p{
-    width: 50%;
-    margin: 0;
-    padding: 0;
-  }
-  .wedo div img{
-    margin: 0 0 0 2em;
-  }
   .workwith div{
     width: 70%;
   }
@@ -376,13 +347,16 @@ label {
   .contact{
     font-size: 1em;
   }
+  #contact{
+    padding-bottom: 0;
+  }
   .btn{
     font-size: 1em;
   }
 }
 
 //--- Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
   .navbar{
     top: 0;
     bottom: initial;

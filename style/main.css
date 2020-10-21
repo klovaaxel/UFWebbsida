@@ -14,6 +14,15 @@ body {
   background-color: #fff;
 }
 
+h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 3.2rem;
+}
+
 a {
   outline: none !important;
   color: #b4da17;
@@ -91,6 +100,7 @@ video {
   min-height: 56.25vw;
   background: url(resources/img/vid/main_bg.gif);
   background-size: cover;
+  object-fit: fill;
 }
 
 section + section {
@@ -125,7 +135,7 @@ section {
 }
 
 .nav-link, .nav-item {
-  font-size: 1.5em;
+  font-size: 4rem;
 }
 
 .navbar-dark .navbar-toggler span {
@@ -154,22 +164,17 @@ section {
   height: 2em;
 }
 
-.wedo div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .wedo div img {
-  display: inline-flex;
-  flex-grow: 1;
-  max-height: 70vh;
-  margin: 0 0 0 2em;
+  padding: 2em;
 }
 
 .wedo .row {
-  margin: 0;
-  padding: 0;
+  height: 100%;
+}
+
+.mb-lg-5, .my-lg-5 {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .bg-light {
@@ -230,25 +235,12 @@ label {
 
 .icon a {
   display: inline-flex;
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
   text-decoration: none;
 }
 
-.form-horizontal {
-  margin-bottom: 12%;
-}
-
-@media (min-width: 576px) {
-  h2 {
-    font-size: 6em;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 3.5em;
-  }
-
+@media (min-width: 576px) and (orientation: portrait) {
   .navbar {
     bottom: 0;
     top: initial;
@@ -285,17 +277,11 @@ label {
   }
 
   .navbarMenuButton {
-    font-size: 5 em;
     padding: 0 0;
   }
 
   .nav-item {
-    font-size: 2.2em;
     margin-top: 1.5em;
-  }
-
-  .wedo div p {
-    width: 100%;
   }
 
   .contact {
@@ -310,7 +296,7 @@ label {
     font-size: 1em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: portrait) {
   .navbar {
     bottom: 0;
     top: initial;
@@ -340,16 +326,6 @@ label {
   .navbarMenuButton {
     font-size: 4em;
     padding: 1em 0;
-  }
-
-  .wedo div p {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .wedo div img {
-    margin: 4em 0;
   }
 }
 @media (min-width: 992px) {
@@ -401,16 +377,6 @@ label {
     background-position: 260% 95%, 0 0;
   }
 
-  .wedo div p {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .wedo div img {
-    margin: 0 0 0 2em;
-  }
-
   .workwith div {
     width: 70%;
   }
@@ -424,6 +390,10 @@ label {
 
   .contact {
     font-size: 1em;
+  }
+
+  #contact {
+    padding-bottom: 0;
   }
 
   .btn {
