@@ -245,6 +245,9 @@ label {
   box-shadow: -40px 40px 0px -10px $primary-color;
   width: 30%;
 }
+.card-shadow:hover{
+  text-decoration: none;
+}
 .card{
   width: 100%;
   border-radius: 0;
@@ -253,7 +256,9 @@ label {
 }
 .card:hover{
   transform: scale(1.2);
+  text-decoration: none;
 }
+
 
 
 //--- Small devices (landscape phones, 576px and up)

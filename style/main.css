@@ -270,6 +270,10 @@ label {
   width: 30%;
 }
 
+.card-shadow:hover {
+  text-decoration: none;
+}
+
 .card {
   width: 100%;
   border-radius: 0;
@@ -279,6 +283,7 @@ label {
 
 .card:hover {
   transform: scale(1.2);
+  text-decoration: none;
 }
 
 @media (min-width: 576px) and (orientation: portrait) {
