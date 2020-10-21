@@ -286,6 +286,10 @@ label {
   text-decoration: none;
 }
 
+.card-img-top {
+  border-radius: 0;
+}
+
 @media (min-width: 576px) and (orientation: portrait) {
   .navbar {
     bottom: 0;
