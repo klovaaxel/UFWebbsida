@@ -24,6 +24,10 @@ h2{
   font-size: 6rem;
   font-weight: bold;
 }
+h5
+{
+  font-size: 4rem;
+}
 p{
   font-size: 3.2rem;
 }
@@ -78,7 +82,7 @@ body section:first-of-type{
   background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #fffd;
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 .VideoContainer{
   position: absolute;
@@ -107,18 +111,17 @@ section{
   min-height: 100vh;
   width: 100%;
   padding: 0 5em;
+  min-height: 100vh;
+  padding-bottom: 2em;
 }
 .bg-dark {
   background-color: $secondary-dark;
   color: $primary-light;
-  min-height: 100vh;
-  padding-bottom: 2em;
+
 }
 .bg-light{
   background-color: $primary-light;
   color: $secondary-dark;
-  min-height: 100vh;
-  padding-bottom: 2em;
 }
 
 //--- Navbar
@@ -203,9 +206,6 @@ section{
 .contact{
   padding-bottom: 30%;
 }
-
-
-
 address{
   font-weight: bold;
 }
@@ -227,6 +227,35 @@ label {
   text-decoration: none;
   padding-left: 2rem;
 }
+//--- products
+.products{
+  padding-top: 10vh;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  text-decoration: none;
+
+}
+.card-shadow{
+  box-shadow: -40px 40px 0px -10px $primary-color;
+  width: 30%;
+}
+.card{
+  width: 100%;
+  border-radius: 0;
+  margin: 1em;
+  transition: .2s;
+}
+.card:hover{
+  transform: scale(1.2);
+}
+
+
 //--- Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (orientation: portrait) {
   .navbar{
@@ -285,6 +314,16 @@ label {
   }
   .contact .links{
     margin-left: 0%;
+  }
+  .cards{
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .card-shadow{
+    width: 90%;
+    margin-bottom: 5em;
   }
 
 }
