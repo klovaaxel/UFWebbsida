@@ -200,9 +200,12 @@ section{
 }
 
 //--- Contact
-#contact{
+.contact{
   padding-bottom: 30%;
 }
+
+
+
 address{
   font-weight: bold;
 }
@@ -214,15 +217,15 @@ label {
 }
 .icon{
   display: flex;
-  width: 50%;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: left;
 }
 .icon a{
   display: inline-flex;
-  font-size: 4rem;
+  font-size: 10rem;
   text-align: center;
   text-decoration: none;
+  padding-left: 2rem;
 }
 //--- Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (orientation: portrait) {
@@ -279,6 +282,9 @@ label {
   .workwith div a img{
     padding: 0;
     box-shadow: none;
+  }
+  .contact .links{
+    margin-left: 0%;
   }
 
 }
@@ -369,11 +375,20 @@ label {
   .contact{
     font-size: 1em;
   }
-  #contact{
+  .contact{
     padding-bottom: 0;
   }
   .btn{
     font-size: 1em;
+  }
+  .contact .links {
+    max-width: 30%;
+  }
+  .row {
+    justify-content: space-between;
+  }
+  .icon a{
+    font-size: 6rem;
   }
 }
 

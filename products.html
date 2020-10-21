@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">
+
+
+    <title>Zitrus</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="resources/img/logo/logo_text_light.svg" alt="ZITRUS">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler text-center navbarMenuButton" id="navbarMenuButton" onclick="menuTextSwap()">Menu</span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarToggle" onclick="menuTextSwap()">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#whatwedo" >What we do</a>
+          </li>
+          <li class="nav-item"data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#whoweworkwith">Who we work with</a>
+          </li>
+          <li class="nav-item"data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script type="JavaScript">
+      window.addEventListener("load", () => {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("js/service-worker.js");
+        }
+      });
+    </script>
+
+  </body>
+</html>
