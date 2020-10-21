@@ -9,13 +9,16 @@ img{
   height: 42%;
   background-color: red;
 }*/
+html{
+  background: $primary-dark;
+}
 body{
   font-family: 'Open Sans', sans-serif;
   max-width: 100vw;
   max-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: $primary-light;
+  background-color: $primary-dark;
 }
 h2{
   font-size: 6rem;
