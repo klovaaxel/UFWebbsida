@@ -108,10 +108,14 @@ section{
 .bg-dark {
   background-color: $secondary-dark;
   color: $primary-light;
+  min-height: 100vh;
+  padding-bottom: 2em;
 }
 .bg-light{
   background-color: $primary-light;
   color: $secondary-dark;
+  min-height: 100vh;
+  padding-bottom: 2em;
 }
 
 //--- Navbar
@@ -150,9 +154,8 @@ section{
 }
 //--- what we do section
 .wedo div img{
-  padding: 2em;
+  box-shadow: -40px 40px 0px -10px $primary-color;
 }
-
 .wedo .row {
   height: 100%;
 }
@@ -167,7 +170,6 @@ section{
   background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, $primary-light;
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
-  height: 100vh;
 }
 .workwith div{
   display: flex;
@@ -184,6 +186,8 @@ section{
 .workwith div a img{
   width: 100%;
   height: 100%;
+  padding: 1em;
+  box-shadow: -20px 20px 0px -10px $primary-color;
 }
 .workwith div a{
   display: inline-block;
@@ -262,6 +266,18 @@ label {
   .form-control {
     font-size: 1em;
   }
+  .wedo div img{
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: -5em;
+    box-shadow: none;
+  }
+  .workwith div a img{
+    padding: 0;
+    box-shadow: none;
+  }
+
 }
 
 //--- Medium devices (tablets, 768px and up)
@@ -297,6 +313,9 @@ label {
 
 //--- Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .wedo div img{
+    padding: 2em;
+  }
   p{
     font-size: 2em;
   }

@@ -116,11 +116,15 @@ section {
 .bg-dark {
   background-color: #707070;
   color: #fff;
+  min-height: 100vh;
+  padding-bottom: 2em;
 }
 
 .bg-light {
   background-color: #fff;
   color: #707070;
+  min-height: 100vh;
+  padding-bottom: 2em;
 }
 
 .navbar {
@@ -165,7 +169,7 @@ section {
 }
 
 .wedo div img {
-  padding: 2em;
+  box-shadow: -40px 40px 0px -10px #b4da17;
 }
 
 .wedo .row {
@@ -181,7 +185,6 @@ section {
   background: url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, #fff;
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
-  height: 100vh;
 }
 
 .workwith div {
@@ -201,6 +204,8 @@ section {
 .workwith div a img {
   width: 100%;
   height: 100%;
+  padding: 1em;
+  box-shadow: -20px 20px 0px -10px #b4da17;
 }
 
 .workwith div a {
@@ -295,6 +300,19 @@ label {
   .form-control {
     font-size: 1em;
   }
+
+  .wedo div img {
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: -5em;
+    box-shadow: none;
+  }
+
+  .workwith div a img {
+    padding: 0;
+    box-shadow: none;
+  }
 }
 @media (min-width: 768px) and (orientation: portrait) {
   .navbar {
@@ -329,6 +347,10 @@ label {
   }
 }
 @media (min-width: 992px) {
+  .wedo div img {
+    padding: 2em;
+  }
+
   p {
     font-size: 2em;
   }
