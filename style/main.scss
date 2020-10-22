@@ -168,11 +168,6 @@ section{
   height: 100%;
 }
 
-.mb-lg-5, .my-lg-5 {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-}
-
 //--- Work with section
 .bg-light{
   background:url(../resources/img/logo/lime_slice.svg) right bottom no-repeat, $primary-light;
@@ -367,8 +362,96 @@ label {
   .wedo div img{
     padding: 2em;
   }
+  .wedo.row{
+    margin: 1em 0;
+  }
+  section h2{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+  .navbar{
+    top: 0;
+    bottom: initial;
+  }
+  .navbar-toggler{
+    width: auto;
+  }
+  .navbar-brand{
+    display: inline-block;
+  }
+  .navbar-collapse ul{
+    text-align: right;
+    margin-right:1%;
+    margin-top: 1em;
+  }
+  .navbarMenuButton{
+    padding: 0 0;
+    font-size: 2rem;
+  }
+  .nav-link, .nav-item{
+    font-size: 2rem;
+  }
+  header{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  header h1 {
+    width: auto;
+    text-align: left;
+  }
+  header h2 {
+    padding-left: 0%;
+  }
+  body section:first-of-type, .bg-light{
+    background-size: 80% 50%, 100% 100%;
+    background-position: 260% 95%, 0 0;
+  }
+  .workwith div{
+    width: 70%;
+  }
+  .workwith div a{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-top: 5em;
+  }
+  .contact{
+    font-size: 1rem;
+  }
+  .contact{
+    padding-bottom: 0;
+  }
+  .btn{
+    font-size: 1rem;
+  }
+  .contact .links {
+    max-width: 30%;
+  }
+  .row {
+    justify-content: space-between;
+  }
+  .icon a{
+    font-size: 6rem;
+  }
+}
+
+//--- Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1400px) {
+  .wedo div img{
+    padding: 2em;
+  }
+  .mb-lg-5, .my-lg-5 {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
   p{
     font-size: 2em;
+  }
+  section h2{
+    font-size: 6rem;
   }
   .navbar{
     top: 0;
@@ -388,6 +471,9 @@ label {
   .navbarMenuButton{
     padding: 0 0;
     font-size: 2em;
+  }
+  .nav-lin, .nav-itemk{
+    font-size: 3rem;
   }
   header{
     position: absolute;
@@ -431,20 +517,6 @@ label {
   }
   .icon a{
     font-size: 6rem;
-  }
-}
-
-//--- Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px){
-  .navbar{
-    top: 0;
-    bottom: initial;
-  }
-  .navbar-toggler{
-    width: auto;
-  }
-  .navbar-brand{
-    display: inline-block;
   }
 }
 
