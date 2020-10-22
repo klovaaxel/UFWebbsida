@@ -196,6 +196,14 @@ section {
   background-position: 260% 95%, 0 0;
 }
 
+body .workwith {
+  background-position: -186% 95%, 0 0;
+}
+
+.workwith div {
+  float: right;
+}
+
 .workwith div {
   display: flex;
   flex-direction: row;
