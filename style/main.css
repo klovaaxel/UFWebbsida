@@ -161,6 +161,11 @@ section {
   background-color: #444444;
 }
 
+.navbar-toggler img {
+  transform: translateY(-0.3em);
+  transition: 0.5s;
+}
+
 .navbar-dark .navbar-toggler, .navbar-brand, .navbar, .navbar-dark .navbar-nav .nav-link {
   font-weight: bold;
   font-variant: normal;
@@ -258,14 +263,12 @@ label {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 70%;
   margin: 0 auto;
   text-decoration: none;
 }
 
 .card-shadow {
   box-shadow: -40px 40px 0px -10px #b4da17;
-  width: 30%;
 }
 
 .card-shadow:hover {
@@ -496,6 +499,18 @@ label {
   .icon a {
     font-size: 6rem;
   }
+
+  .cards {
+    width: 100%;
+  }
+
+  .card-shadow {
+    width: 30%;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
 }
 @media (min-width: 1400px) {
   .wedo div img {
@@ -596,6 +611,14 @@ label {
 
   .icon a {
     font-size: 6rem;
+  }
+
+  .cards {
+    width: 70%;
+  }
+
+  .card-shadow {
+    width: 30%;
   }
 }
 
