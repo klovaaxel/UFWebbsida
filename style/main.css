@@ -15,7 +15,6 @@ body {
   max-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #444444;
 }
 
 h2 {
@@ -88,6 +87,10 @@ body section:first-of-type {
   background-size: 80% 50%, 100% 100%;
   background-position: 260% 95%, 0 0;
   min-height: 100vh;
+}
+
+.primary-color {
+  color: #b4da17;
 }
 
 .VideoContainer {
