@@ -34,7 +34,7 @@ a {
    outline: none !important;
    color: $primary-color;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active, a:focus, button {
   outline: none !important;
   color: $primary-color;
 }
@@ -54,6 +54,9 @@ a:hover, a:active, a:focus {
 .btn:focus, .btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem $primary-color;
+}
+button:focus {
+    outline: 0;
 }
 
 //--- Header

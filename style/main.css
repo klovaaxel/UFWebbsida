@@ -35,7 +35,7 @@ a {
   color: #b4da17;
 }
 
-a:hover, a:active, a:focus {
+a:hover, a:active, a:focus, button {
   outline: none !important;
   color: #b4da17;
 }
@@ -58,6 +58,10 @@ a:hover, a:active, a:focus {
 .btn:focus, .btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem #b4da17;
+}
+
+button:focus {
+  outline: 0;
 }
 
 header {
