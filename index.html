@@ -136,15 +136,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
-    <script>
-      console.log("Runnung JS");
-      window.addEventListener("load", () => {
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("js/service-worker.js");
-          console.log("registerd serviceWorker");
-        }
-      });
-    </script>
 
     <script type="text/javascript">
       if ('serviceWorker' in navigator) {

@@ -2,6 +2,11 @@
   "short_name": "Zitrus",
   "name": "Zitrus UF",
   "description": "IT soultions fo you",
+  "start_url": "index.html",
+  "background_color": "#f4f2f3",
+  "display": "standalone",
+  "scope": "",
+  "theme_color": "#b4da17",
   "icons": [
     {
       "src": "resources/img/icon/zitrus_icon_192.png",
@@ -13,10 +18,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": "/?source=pwa",
-  "background_color": "#f4f2f3",
-  "display": "standalone",
-  "scope": "/",
-  "theme_color": "#b4da17"
+  ]
 }
