@@ -4,8 +4,8 @@
  "background_color": "#fff",
  "display": "standalone",
  "orientation": "portrait",
- "scope": "../",
- "start_url": "/index.html",
+ "scope": "/",
+ "start_url": "index.html",
  "icons": [
     {
       "src": "resources/img/icon/zitrus_icon_192.png",
