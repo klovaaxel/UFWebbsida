@@ -381,6 +381,10 @@ label {
   .navbar-toggler img {
     display: none;
   }
+
+  .workwith div {
+    float: none;
+  }
 }
 @media (min-width: 768px) and (orientation: portrait) {
   .navbar {
