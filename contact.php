@@ -9,7 +9,7 @@
                 "Email: $email.\n".
                 "Message: $message.\n";
 
-  $to = "contact@zitrus.se";
+  $to = "info@zitrus.se";
   $headers = "From: $email_from \r\n";
   $headers .= "Reply-To: $email \r\n";
 
